@@ -14,7 +14,7 @@ This redesign is based around the PSF v1.1 or later proportional sensor kit from
 
 ![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.jpeg>)
 
-> ![NOTE] 
+> ![NOTE]
 > Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or > [Single-colour](Single_Colour_Step) with recessed tick marks.
 
 Assembly is reasonably straight forward.
