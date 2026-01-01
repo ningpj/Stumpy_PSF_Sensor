@@ -14,7 +14,8 @@ This redesign is based around the PSF v1.1 or later proportional sensor kit from
 
 ![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.jpeg>)
 
-![NOTE] Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or [Single-colour](Single_Colour_Step) with recessed tick marks.
+> ![NOTE] 
+> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or > [Single-colour](Single_Colour_Step) with recessed tick marks.
 
 Assembly is reasonably straight forward.
 
@@ -44,12 +45,13 @@ Assembly is reasonably straight forward.
 This needs to be used with `Happy Hare` Flowguard and **integrated** support for Proportional Feedback Sensors.
 Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for detailed setup and configuration instructions.
 
-If you haven't already, you will need to switch to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` is complete and its merged with the main Happy Hare release.
-
-```text
-cd Happy-Hare
-./install.sh -b FLOWGUARD
-```
+> ![IMPORTANT]
+> You will need to switch to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` is complete and merged with the main Happy Hare release.  
+>
+> ```text
+> cd Happy-Hare
+> ./install.sh -b FLOWGUARD
+> ```
 
 ## Happy Hare Configuration
 
