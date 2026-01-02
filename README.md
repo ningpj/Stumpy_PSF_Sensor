@@ -8,7 +8,7 @@ This redesign is based around the PSF v1.1 or later proportional sensor kit from
 
 ## References & Acknowledgements
 
-- This design is based on the original works of [Tshine's Filament Sync Sensor](https://makerworld.com/en/models/507573) and PSF adaption by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file).
+This design is based on the original works of [Tshine's Filament Sync Sensor](https://makerworld.com/en/models/507573) and PSF adaption by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file).
 
 ## Assembly
 
