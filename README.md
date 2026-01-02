@@ -75,3 +75,13 @@ sync_feedback_analog_max_compression: 0.0038      # Raw sensor reading at max fi
 sync_feedback_analog_max_tension: 0.9919          # Raw sensor reading at max filament tension (buffer expanded)
 sync_feedback_analog_neutral_point: 0.4979        # Neutral point
 ```
+
+## Installation Options
+
+Normal orientation (as designed)
+
+![Normal Oriented (As designed)](<Assets/Normal orientation.png>)
+
+Inverted (Mirror all parts along x axis in your slicer)
+
+![Inverted Orientation](<Assets/Inverted along x axis in slicer.jpeg>)
