@@ -9,7 +9,7 @@ This redesign is based around the PSF v1.1 or later proportional sensor kit from
 ## References & Acknowledgements
 
 This design is based on the original works of [Tshine's Dual Micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) and PSF adaption by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file).
-Its been optimised and shortened (65mm, 6.2mm shorter) to work better with top mounted MMU's and bowden entry ports.
+Its been optimised and shortened (65mm, 6.2mm shorter than Kashine6's version) to work better with top mounted MMU's and bowden entry ports.
 
 ## Assembly
 
