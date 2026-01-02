@@ -82,6 +82,6 @@ Normal orientation (as designed)
 
 ![Normal Oriented (As designed)](<Assets/Normal orientation.jpeg>)
 
-Inverted (Mirror all parts along x axis in your slicer)
+**[Optional]** Inverted (Mirror all parts along x axis in your slicer)
 
 ![Inverted Orientation](<Assets/Inverted along x axis in slicer.jpeg>)
