@@ -46,7 +46,7 @@ Assembly is reasonably straight forward.
 This needs to be used with `Happy Hare` Flowguard and **integrated** support for Proportional Feedback Sensors.
 Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for detailed setup and configuration instructions.
 
-> ![NOTE]
+> [!NOTE] 
 > You will need to switch to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` is complete and merged with the main Happy Hare release.  
 >
 > ```text
