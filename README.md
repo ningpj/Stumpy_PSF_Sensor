@@ -51,7 +51,7 @@ Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Ex
 > You will need to switch to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` is complete and merged with the main Happy Hare release.  
 >
 > ```text
-> cd Happy-Hare
+> cd ~/Happy-Hare
 > ./install.sh -b FLOWGUARD
 > ```
 
