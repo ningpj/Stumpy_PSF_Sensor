@@ -17,7 +17,7 @@ Its been optimised and shortened to work better with top mounted MMU's and bowde
 
 > [!NOTE] 
 > Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or  [Single-colour](Single_Colour_Step) with recessed tick marks.
-> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror on x in your slicer) to move the connector to the top to streamline wiring. 
+> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the top to streamline wiring. 
 
 
 Assembly is reasonably straight forward.
