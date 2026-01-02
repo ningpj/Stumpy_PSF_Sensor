@@ -80,7 +80,7 @@ sync_feedback_analog_neutral_point: 0.4979        # Neutral point
 
 Normal orientation (as designed)
 
-![Normal Oriented (As designed)](<Assets/Normal orientation.png>)
+![Normal Oriented (As designed)](<Assets/Normal orientation.jpeg>)
 
 Inverted (Mirror all parts along x axis in your slicer)
 
