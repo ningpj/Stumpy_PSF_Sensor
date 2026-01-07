@@ -4,12 +4,11 @@ During extended periods of synchronised printing without intervening tool change
 
 Proportional sync-feedback sensors address this using linear Hall Effect sensors (or similar), providing analog positional telemetry to Happy Hare allowing it to continuously adjust and fine tune gear stepper Rotational Distance (RD).
 
-This redesign is based around the PSF v1.1 or later proportional sensor kit from **Kashine6** and is intended to be used with the **Happy Hare** MMU ecosystem and Flowguard / Sync-feedback controller.
+This redesign is based around the PSF v1.0/1.1 or later proportional sensor kit from **Kashine6** on ALiexpress and is intended to be used with the **Happy Hare** MMU ecosystem and new Flowguard / Sync-feedback controller.
 
 ## References & Acknowledgements
 
-This design is based on the original works of [Tshine's Dual Micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) and porportional sync feedback (PSF) sensor adaption by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file).
-Its been optimised and shortened (65mm, 6.2mm shorter than Kashine6's version) to work better with top mounted MMU's and bowden entry ports.
+This design is based on the original works of [Tshine's Dual Micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) and subsequent adaption to accomodate Proportional Sync-Feedback (PSF) sensor circuitry and magnet by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file). Its been optimised (sensor / magnet placement, mainbody changes, etc) and significantly shortened (65mm - 6.2mm shorter than Kashine6's version) to work better with top mounted MMU's and bowden entry ports.
 
 ## Assembly
 
