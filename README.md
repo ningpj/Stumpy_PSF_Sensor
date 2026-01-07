@@ -13,7 +13,7 @@ This is built around the PSF v1.0/1.1 or later Proportional Sync-Feedback sensor
 
 This design has been completely reworked from the ground up, incorporating improvements informed by field testing of MK I and earlier adaptations of [Tshine's original dual micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) by Kashine6.
 
-The primary goals were to reduce the overall form factor, optimise sensor–magnet alignment and restrict shuttle lateral movement to maximise signal fidelity, particularly for top‑mounted MMUs and central Bowden entry ports. The assembly now measures just 63 mm in length — 9.2 mm shorter than Kashine6’s version and 3 mm shorter than MK I revision.
+The primary goals were to reduce the overall form factor, optimise sensor–magnet alignment and restrict shuttle lateral movement to maximise signal fidelity, particularly for top‑mounted MMUs and central Bowden entry ports. The assembly now measures just 63 mm in length — 9.2 mm shorter than Kashine6’s version and 3 mm shorter than MK I revision. ECAS04 captive retension design has also been improved to make it easier to install, hopefully without splitting the base.  
 
 ## Assembly
 
