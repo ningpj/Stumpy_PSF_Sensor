@@ -7,7 +7,7 @@ Proportional sync-feedback sensors address this using linear Hall Effect sensors
 This redesign is based around the PSF v1.1 or later proportional sensor kit from **Kashine6** and is intended to be used with the **Happy Hare** MMU ecosystem and Flowguard / Sync-feedback controller.
 
 > [!WARNING] 
-> I'm in the process of a full re-design which hasnt been fully "print" tested or verified and expect it will need further tweaks and changes. Please continue to use steps from the **MK I (Derived design)** folder until this notice is removed.
+> I'm in the process of a full re-design which hasnt been fully "print" tested or verified and expect it will need further tweaks and changes. Please continue to use steps from the main repo branch.
 
 ## References & Acknowledgements
 
