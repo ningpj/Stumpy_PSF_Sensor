@@ -4,15 +4,16 @@ During extended periods of synchronised printing without intervening tool change
 
 Proportional sync-feedback sensors address this using linear Hall Effect sensors (or similar), providing analog positional telemetry to Happy Hare allowing it to continuously adjust and fine tune gear stepper Rotational Distance (RD).
 
-This redesign is based around the PSF v1.1 or later proportional sensor kit from **Kashine6** and is intended to be used with the **Happy Hare** MMU ecosystem and Flowguard / Sync-feedback controller.
+This is built around the PSF v1.0/1.1 or later Proportional Sync-Feedback sensor kit from **Kashine6** and is intended to be used with the **Happy Hare** MMU ecosystem and new Flowguard / Sync-feedback controller facilities (Happy-Hare `3.4.2` or later (`3.4.2` is in open beta).
 
 > [!WARNING] 
-> I'm in the process of a full re-design which hasnt been fully "print" tested or verified and expect it will need further tweaks and changes. Please continue to use steps from the main repo branch.
+> This is a **W**ork **I**n **P**rogress: This is a full redesign and isn't fully baked or "*print*" tested and expect it will need further tweaks and changes. Please continue to use steps from the `main` Stumpy FSF Sensor repo branch.
 
 ## References & Acknowledgements
 
-This design is based on the original works of [Tshine's Dual Micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) and porportional sync feedback (PSF) sensor adaption by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file).
-Its been optimised and shortened (65mm, 6.2mm shorter than Kashine6's version) to work better with top mounted MMU's and bowden entry ports.
+This design has been completely reworked from the ground up, incorporating improvements informed by field testing of MK I and earlier adaptations of [Tshine's original dual micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) by Kashine6.
+
+The primary goals were to reduce the overall form factor, optimise sensor–magnet alignment and restrict shuttle lateral movement to maximise signal fidelity, particularly for top‑mounted MMUs and central Bowden entry ports. The assembly now measures just 63 mm in length — 9.2 mm shorter than Kashine6’s version and 3 mm shorter than MK I revision.
 
 ## Assembly
 
