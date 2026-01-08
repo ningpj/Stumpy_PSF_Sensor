@@ -21,7 +21,7 @@ The primary goals were to reduce the overall form factor, optimise sensor–magn
 
 > [!NOTE] 
 > Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or  [Single-colour](Single_Colour_Step) with recessed tick marks.
-> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the bottom to streamline wiring for you articular mmu.
+> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the bottom to streamline wiring for your particular mmu.
 
 
 Assembly is reasonably straight forward.
