@@ -40,7 +40,7 @@ Assembly is reasonably straight forward.
 
 | Item                            | Specification                                                | Quantity |
 | ------------------------------- | ------------------------------------------------------------ | -------- |
-| **PSF v1.0/1.1+ Board**         | Kit from [Aliexpress](https://www.aliexpress.com/item/1005010470743517.html) includes all the required parts below    | 1        |
+| **PSF v1.0/1.1+ Board**         | Inexpensive kit from [Aliexpress](https://www.aliexpress.com/item/1005010470743517.html) that includes all the required parts below    | 1        |
 | **Spring**                      | 0.4 mm × 6 mm × 20 mm, spring steel ( If longer, e,g 25mm, cut down and shorten it, tiding up the cut end with needle nose pliers   | 1        |
 | **Magnet**                      | D4 mm × 15 mm N35                                            | 1        |
 | **ECAS04 Bowden connector & clips**|                                                           | 2        |
