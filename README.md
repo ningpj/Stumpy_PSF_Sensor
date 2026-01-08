@@ -29,7 +29,7 @@ Assembly is reasonably straight forward.
 - Install ECAS fittings without optional, rubber boots
 - Install D4 x 15mm magnet in PSF shuttle until it's flush with the end of the shuttle opposite the ECAS fitting (magnetic orientation doesn't matter)
 - Straighten the PTFE tube you will be inserting into the "Stumpy" PSF body
-- Insert the PTFE tube from the left, threading it through the `20mm` spring and PSF shuttle until it bottoms out on the recess of the body. Adjust the position so it doesnt jam or pull out of the channel when held against the opposite stop, Install the ECAS clip to secure
+- Insert the PTFE tube from the left, threading it through the `20mm` spring and PSF shuttle until it bottoms out on the recess of the body. Adjust the position so it doesnt jam or pull out of the channel when held against the opposite stop, Install the ECAS clip to secure, inerted with the 90° top towards the shuttle so its retained in the nub's provided
 - Insert PSF module into slot provided
 - Genltly slide the lib / cover from the back and locate on the nubs before securing with a M2 x 6mm SHCS screw
 - Verify the shuttle moves freely across its full range of movement
