@@ -34,7 +34,7 @@ Assembly is reasonably straight forward.
 - Genltly slide the lib / cover from the back and locate on the nubs before securing with a M2 x 6mm SHCS screw
 - Verify the shuttle moves freely across its full range of movement
 
-![Assembly showing magnet position](<Assets/Assembly showing magnet recess.png>)
+![Assembly showing magnet ECSA clip positions](<Assets/Assembly showing magnet, spring, and ECAS clip orientation.png>)
 
 ## Bill of Materials (BOM)
 
@@ -77,16 +77,4 @@ sync_feedback_analog_pin: mmu:<ADC GPIO>          # The ADC pin where the propor
 sync_feedback_analog_max_compression: 0.9964      # Raw sensor reading at max filament compression (buffer squeezed)
 sync_feedback_analog_max_tension: 0.0046          # Raw sensor reading at max filament tension (buffer expanded)
 sync_feedback_analog_neutral_point: 0.5005        # Neutral point
-
-
 ```
-
-## Installation Options
-
-Normal orientation (as designed)
-
-![Normal Oriented (As designed)](<Assets/Normal orientation.jpeg>)
-
-**[Optional]** Inverted (Mirror all parts along x axis in your slicer)
-
-![Inverted Orientation](<Assets/Inverted along x axis in slicer.jpeg>)
