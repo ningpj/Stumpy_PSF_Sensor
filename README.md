@@ -20,7 +20,7 @@ The primary goals were to reduce the overall form factor, optimise sensor–magn
 ![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.png>)
 
 > [!NOTE] 
-> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](MK%20%II%20%(Full%20%redesign)/Multi_Colour_Step) tick marks or  [Single-colour](MK_II_(Full_redesign)/Single_Colour_Step) with recessed tick marks.
+> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](MK%20II%20(Full%20redesign)/Multi_Colour_Step) tick marks or  [Single-colour](MK%20II%20(Full%20redesign)/Single_Colour_Step) with recessed tick marks.
 > Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the bottom to streamline wiring for your particular mmu.
 
 
