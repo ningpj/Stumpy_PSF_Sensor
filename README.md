@@ -1,4 +1,4 @@
-# "_Stumpy_" Proprotional Sync-Feedback (PSF) Sensor for Multi Material Printing
+# "_Stumpy_" Proportional Sync-Feedback (PSF) Sensor for Multi Material Printing
 
 During extended periods of synchronised printing without intervening tool changes, alignment between extruder and gear steppers can gradually drift. Even with precise calibration, factors such as under extrusion during purging, printing at high speed near upper flow limits, friction and drag and the inertia of heavy spools can conspire to cause slippage in either the extruder or more commonly—the downstream gear stepper. Over time, this mismatch accumulates and can lead to print artefacts caused by missed steps or suboptimal extrusion rates. Although not always apparent on well-tuned systems, it's a legitimate and demonstrable issue.
 
@@ -21,7 +21,7 @@ The primary goals were to reduce the overall form factor, optimise sensor–magn
 
 > [!NOTE] 
 > Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or  [Single-colour](Single_Colour_Step) with recessed tick marks.
-> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the bottom to streamline wiring for you articular mmu.
+> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the bottom to streamline wiring for your particular mmu.
 
 
 Assembly is reasonably straight forward.
