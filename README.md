@@ -77,6 +77,8 @@ sync_feedback_analog_pin: mmu:<ADC GPIO>          # The ADC pin where the propor
 sync_feedback_analog_max_compression: 0.9964      # Raw sensor reading at max filament compression (buffer squeezed)
 sync_feedback_analog_max_tension: 0.0046          # Raw sensor reading at max filament tension (buffer expanded)
 sync_feedback_analog_neutral_point: 0.5005        # Neutral point
+
+
 ```
 
 ## Installation Options
