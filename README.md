@@ -17,25 +17,24 @@ The primary goals were to reduce the overall form factor, optimise sensor–magn
 
 ## Assembly
 
-![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.jpeg>)
+![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.png>)
 
 > [!NOTE] 
 > Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or  [Single-colour](Single_Colour_Step) with recessed tick marks.
-> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the top to streamline wiring. 
+> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the bottom to streamline wiring for you articular mmu.
 
 
 Assembly is reasonably straight forward.
 
-- Install ECAS fittings without rubber boots
-- Install D4 x 15mm magnet in PSF shuttle until it's flush with the end of the shuttle (magnetic orientation doesn't matter)
+- Install ECAS fittings without optional, rubber boots
+- Install D4 x 15mm magnet in PSF shuttle until it's flush with the end of the shuttle opposite the ECAS fitting (magnetic orientation doesn't matter)
 - Straighten the PTFE tube you will be inserting into the "Stumpy" PSF body
-- Insert the PTFE tube from the right, threading through the spring and PSF shuttle until it bottoms out on the recess of the body. Install the ECAS clip to secure
-- Hold the shuttle up against the stop on the left hand side of the body. Using a small screw driver or hex key, push and adjust the magnet until it bottoms out in the recess for it on the body. Once in position, it should sit proud of the PSF shuttle by 4mm as per the image below
-- Use 2 M2 x 6mm SHCS screws to install the PSF module
-- Use a M2 x 6mm SHCS screw to secure the cover
+- Insert the PTFE tube from the left, threading it through the `20mm` spring and PSF shuttle until it bottoms out on the recess of the body. Adjust the position so it doesnt jam or pull out of the channel when held against the opposite stop, Install the ECAS clip to secure
+- Insert PSF module into slot provided
+- Genltly slide the lib / cover from the back and locate on the nubs before securing with a M2 x 6mm SHCS screw
 - Verify the shuttle moves freely across its full range of movement
 
-![alt text](<Assets/Assembly showing magnet recess.jpeg>)
+![Assembly showing magnet position](<Assets/Assembly showing magnet recess.png>)
 
 ## Bill of Materials (BOM)
 
@@ -45,7 +44,7 @@ Assembly is reasonably straight forward.
 | **Spring**                      | 0.4 mm × 6 mm × 20 mm, spring steel (cut down and shorten kit spring if too long                          | 1        |
 | **Magnet**                      | D4 mm × 15 mm N35                                            | 1        |
 | **ECAS04 Bowden connector & clips**|                                                           | 2        |
-| **M2×6 mm SHCS screw**          |                                                              | 3        |
+| **M2×6 mm SHCS screw**          |                                                              | 1        |
 
 ## Prerequsites
 
