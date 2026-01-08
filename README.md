@@ -74,9 +74,11 @@ Use `MMU_CALIBRATE_PSENSOR` to determine the min and max ADC raw values returned
 
 ```yaml
 sync_feedback_analog_pin: mmu:<ADC GPIO>          # The ADC pin where the proportional filament pressure sensor is installed
-sync_feedback_analog_max_compression: 0.0038      # Raw sensor reading at max filament compression (buffer squeezed)
-sync_feedback_analog_max_tension: 0.9919          # Raw sensor reading at max filament tension (buffer expanded)
-sync_feedback_analog_neutral_point: 0.4979        # Neutral point
+sync_feedback_analog_max_compression: 0.9964      # Raw sensor reading at max filament compression (buffer squeezed)
+sync_feedback_analog_max_tension: 0.0046          # Raw sensor reading at max filament tension (buffer expanded)
+sync_feedback_analog_neutral_point: 0.5005        # Neutral point
+
+
 ```
 
 ## Installation Options
