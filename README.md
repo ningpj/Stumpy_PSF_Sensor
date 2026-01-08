@@ -66,8 +66,8 @@ Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Ex
 The "Stumpy" PSF Sync-Feedback Sensor has 14mm of movement.
 
 ```yaml
-sync_feedback_buffer_range: 14 		# Travel in "buffer" between compression/tension or one sensor and end (see above)
-sync_feedback_buffer_maxrange: 14 	# Absolute maximum end-to-end travel (mm) provided by buffer (see above)
+sync_feedback_buffer_range: 14.5 		# Travel in "buffer" between compression/tension or one sensor and end (see above)
+sync_feedback_buffer_maxrange: 14.5 	# Absolute maximum end-to-end travel (mm) provided by buffer (see above)
 ```
 
 Use `MMU_CALIBRATE_PSENSOR` to determine the min and max ADC raw values returned by the sensor to set the following parameters in `MMU_HARDWARE.CFG`. Your sensor may return different values than the example below e.g.:
