@@ -10,7 +10,7 @@ This is built around the PSF v1.0/1.1 or later Proportional Sync-Feedback sensor
 
 This design has been completely reworked from the ground up, incorporating improvements informed by field testing of MK I and the earlier adaptations of [Tshine's original dual micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file) to support Proportional Sync-Feedback sensors.
 
-The primary goals have been to further reduce the overall form factor, optimise sensor–magnet alignment and constrain shuttle lateral movement to maximise Hall Affect ADC signal fidelity, particularly for top‑mounted MMUs and central Bowden entry ports. The assembly now measures just 63 mm in length — 9.2 mm shorter than Kashine6’s version and 3 mm shorter than MK I revision. The ECAS04 captive retension design has also been refined to make it easier to install them, hopefully without splitting the base. Printable ECAS04 clips have also been included to colour coordinate ;-)  
+The primary goals have been to further reduce the overall form factor, optimise sensor–magnet alignment and constrain shuttle lateral movement to maximise Hall Affect ADC signal fidelity, particularly for top‑mounted MMUs and central Bowden entry ports. The assembly now measures just `63 mm` in length — `9.2 mm` shorter than Kashine6’s version and `3 mm` shorter than MK I revision. The `ECAS04` captive retention design has also been refined to make it easier to install them, hopefully without splitting the base. Printable `ECAS04` clips have also been included to colour coordinate ;-)  
 
 ## Assembly
 
@@ -42,7 +42,7 @@ Assembly is reasonably straight forward:
 | **Magnet**                      | D4 mm × 15 mm N35                                            | 1        |
 | **ECAS04 Bowden connector & clips**|                                                           | 2        |
 | **M2×6 mm SHCS screw**          |                                                              | 1        |
-| PTFE feeder tube                | Short PTFE feeder tube installed between the “Stumpy” PSF Sensor and the MMU (2.5 mm ID recommended) - 3 mm ID PTFE tube is too soft and will deform or jam if its bent too much. |          |
+| **PTFE feeder tube**                | Short PTFE feeder tube installed between the “Stumpy” PSF Sensor and the MMU (2.5 mm ID recommended) - 3 mm ID PTFE tube is too soft and will deform or jam if its bent too much. |          |
 
 ## Prerequsites
 
