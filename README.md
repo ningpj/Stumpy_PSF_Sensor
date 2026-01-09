@@ -46,7 +46,7 @@ Assembly is reasonably straight forward:
 
 ## Prerequsites
 
-Stumpy PSF needs to be used with `Happy-Hare` Flowguard and **integrated** support for Proportional Feedback Sensors (Release `3.4.2` or later).
+"Stumpy" PSF needs to be used inconjunction with `Happy-Hare` Flowguard **integrated** support for Proportional Feedback Sensors (Release `3.4.2` or later).
 Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for proportional sensor setup, configuration, and usage instructions.
 
 > [!NOTE] 
