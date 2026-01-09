@@ -4,35 +4,40 @@ During extended periods of synchronised printing without intervening tool change
 
 Proportional sync-feedback sensors address this using linear Hall Effect sensors (or similar), providing real-time analog positional telemetry to Happy Hare allowing it to continuously adjust and fine tune the following gear stepper's Rotational Distance (RD).
 
-This is built around the PSF v1.0/1.1 or later Proportional Sync-Feedback sensor kit from **Kashine6** and is intended to be used with the **Happy Hare** MMU ecosystem and new Flowguard / Sync-feedback controller facilities (Happy-Hare `3.4.2` or later (`3.4.2` is currently in open beta).
-
-> [!WARNING] 
-> This is a **W**ork **I**n **P**rogress: This is a full redesign and isn't fully baked or "*print*" verified and expect it will need further tweaks and changes. Please continue to use steps from the `main` Stumpy FSF Sensor repo branch.
+This is built around the PSF v1.0/1.1 or later Proportional Sync-Feedback sensor kit from **Kashine6** and is intended to be used with the **Happy Hare** MMU ecosystem and new Flowguard / Sync-feedback controller facilities (Happy-Hare `3.4.2` or later (`3.4.2` is currently in open beta). It has a total of 14.5mm of buffer range and will work with 20mm or 25mm springs from the kit (20 mm prefered).
 
 ## References & Acknowledgements
 
-This design has been completely reworked from the ground up, incorporating improvements informed by field testing of MK I and earlier adaptations of [Tshine's original dual micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) by Kashine6.
+This design has been completely reworked from the ground up, incorporating improvements informed by field testing of MK I and the earlier adaptations of [Tshine's original dual micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file) to support Proportional Sync-Feedback sensors.
 
-The primary goals were to reduce the overall form factor, optimise sensor–magnet alignment and restrict shuttle lateral movement to maximise signal fidelity, particularly for top‑mounted MMUs and central Bowden entry ports. The assembly now measures just 63 mm in length — 9.2 mm shorter than Kashine6’s version and 3 mm shorter than MK I revision. ECAS04 captive retension design has also been improved to make it easier to install, hopefully without splitting the base.  
+The primary goals have been to further reduce the overall form factor, optimise sensor–magnet alignment and constrain shuttle lateral movement to maximise Hall Affect ADC signal fidelity, particularly for top‑mounted MMUs and central Bowden entry ports. The assembly now measures just 63 mm in length — 9.2 mm shorter than Kashine6’s version and 3 mm shorter than MK I revision. The ECAS04 captive retension design has also been refined to make it easier to install them, hopefully without splitting the base. Printable ECAS04 clips have also been included to colour coordinate ;-)  
 
 ## Assembly
 
 ![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.png>)
 
 > [!NOTE] 
-> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](MK%20II%20(Full%20redesign)/Multi_Colour_Step) tick marks or  [Single-colour](MK%20II%20(Full%20redesign)/Single_Colour_Step) with recessed tick marks.
-> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the bottom to streamline wiring for your particular mmu.
+> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](MK%20II%20(Full%20redesign)/Multi_Colour_Step) tick marks or [Single-colour](MK%20II%20(Full%20redesign)/Single_Colour_Step) with recessed tick marks.
+> Depending on MMU / printer orientation, you may elect to invert all parts (mirror along x axis in your slicer) to move the connector to the bottom to optimise wiring for your particular mmu setup.
 
 
-Assembly is reasonably straight forward.
+Assembly is reasonably straight forward:
 
-- Install ECAS fittings without optional, rubber boots
-- Install D4 x 15mm magnet in PSF shuttle until it's flush with the end of the shuttle opposite the ECAS fitting (magnetic orientation doesn't matter)
-- Straighten the PTFE tube you will be inserting into the "Stumpy" PSF body
+- Install ECAS04 fittings without the optional, rubber boot (You still need the hard plastic, clasp cover whatsit
+- Install D4 x 15mm magnet in PSF shuttle until it's flush with the end of the shuttle opposite the ECAS04 fitting (Magnet orientation doesn't matter as this will be calibrated using Happy Hare)
+- Straighten the PTFE tube you plan to use between your MMU and "Stumpy" PSF Sensor.  Do not use PTFE tube with an ID > 2.5mm for the feeder if its close to the MMU and is likely to bend when traversing gate / lane positons. This is to prevent it from kinking and potentially jamming the shuttle *the shuttle needs to move freely when any gate is selected and loaded
 - Insert the PTFE bowden tube (2.0mm-2.5mm ID) from the left, threading it through the `20mm` spring and PSF shuttle until it bottoms out on the recess of the body. Adjust the position so it doesnt jam or pull out of the channel when held against the opposite stop. Install the ECAS clip to secure the PTFE, inserted with the 90° top towards the shuttle so it's retained, and prevented from rotating by the nub's on the shuttle
 - Insert PSF 1.0/v1.1 circuit board into slot provided
 - Gently slide the lid / cover from the back over the shuttle and onto the base, locating and press the parts until they snap together on the locating nubs. Be gentle, and dont force it. Secure the lid / cover with a single M2 x 6mm SHCS screw
 - Verify the shuttle moves freely across its full range of movement before installing
+
+- Install the ECAS04 fittings without the optional rubber boot. You still need the hard plastic clasp cover on the base though.
+- Press the D4 × 15 mm magnet into the PSF shuttle until it sits flush with the end opposite the ECAS04 fitting. Magnet orientation doesn’t matter; Happy Hare will calibrate it.
+- Straighten the PTFE tube you’ll use between the MMU and the “Stumpy” PSF sensor. Avoid PTFE with an ID > 2.5 mm when fitted clsoe to the MMU if it has to bend to accomodate the full range of gates / lanes as kinks can jam the shuttle, which must move freely for any selected gate.
+- Insert the 2.0 – 2.5 mm ID PTFE feeder tube from the left, feeding it through the 20 mm spring (or 25 mm if this is all you have) and shuttle until it bottoms out in the body recess. Adjust so it neither binds nor pulls out when held against the opposite stop. Install the colour coordinated ECAS04 clip with the 90° top facing the shuttle so it’s retained and prevented from rotating by the nubs provided.
+- Insert the PSF 1.0 / v1.1 PCB into the provided slot.
+- Slide the lid / cover on from the back over the shuttle and onto the base, aligning the parts and snapping them gently onto the locating nubs. Do not force it. Secure with a single M2 × 6 mm SHCS.
+- Confirm the shuttle moves freely across its full travel before installing.
 
 ![Assembly showing magnet ECSA clip positions](<Assets/Assembly showing magnet, spring, and ECAS clip orientation.png>)
 
@@ -45,40 +50,42 @@ Assembly is reasonably straight forward.
 | **Magnet**                      | D4 mm × 15 mm N35                                            | 1        |
 | **ECAS04 Bowden connector & clips**|                                                           | 2        |
 | **M2×6 mm SHCS screw**          |                                                              | 1        |
-| PTFE tube                       | Short PTFE tube between Stumpy Sensor and MMU (2 - 2.5mm ID). 3mm ID is too weak and will deform and jam. |          |
+| PTFE feeder tube                | Short PTFE feeder tube installed between the “Stumpy” PSF Sensor and the MMU (2.5 mm ID recommended) - 3 mm ID PTFE tube is too soft and will deform or jam if its bent too much. |          |
 
 ## Prerequsites
 
-Stumpy PSF needs to be used with `Happy Hare` Flowguard and **integrated** support for Proportional Feedback Sensors.
-Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for detailed setup and configuration instructions.
+Stumpy PSF needs to be used with `Happy Hare` Flowguard and **integrated** support for Proportional Feedback Sensors (Release `3.4.2` or later).
+Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for proportional sensor setup, configuration, and usage instructions.
 
 > [!NOTE] 
-> You will need to switch to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` concludes and is merged with the main Happy Hare release.  
+> You will need to manually switch across to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` concludes and is merged with the main Happy-Hare release.  
 >
 > ```text
 > cd ~/Happy-Hare
 > ./install.sh -b flowguard
 > ```
-> Switch back at any time by running `./install.sh -b main` but may need to manually undo some of the new Flowguard configuration & renamed parameters (Its not difficult).
+> You can switch back at any time by running `./install.sh -b main` but will need to manually undo some of the new Flowguard configuration optiosn & renamed Happy-Hare parameters (It's not difficult, just a reminder).
 
 ## Happy Hare Configuration
 
 `MMU_PARAMETERS.CFG`
 
-The "Stumpy" PSF Sync-Feedback Sensor has 14mm of movement.
+The "Stumpy" PSF Sync-Feedback Sensor has 14.5mm of buffer / sensor range.
 
 ```yaml
 sync_feedback_buffer_range: 14.5 		# Travel in "buffer" between compression/tension or one sensor and end (see above)
 sync_feedback_buffer_maxrange: 14.5 	# Absolute maximum end-to-end travel (mm) provided by buffer (see above)
 ```
 
-Use `MMU_CALIBRATE_PSENSOR` to determine the min and max ADC raw values returned by the sensor to set the following parameters in `MMU_HARDWARE.CFG`. Your sensor may return different values than the example below e.g.:
+In `MMU_HARDWARE.CFG` set `sync_feedback_analog_pin: mmu:<ADC GPIO>` to a valid analog-capable GPIO port on your MCU you have connected the "Stumpy" PSF sensor to. [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file) provides a breakdown on their GITHUB of valid ADC GPIO ports for many popular MMU MCU's.  Note that while many boards offer multiple ADC-capable GPIO's, only one port has been fully verified and documented for each board.
+
+Restart Klipper, load a gate with filament and run `MMU_CALIBRATE_PSENSOR` to determine the minimum and maximum ADC values returned by your PSF v1.0 / v1.1 Sensor module. Use these values to configure the corresponding parameters in `MMU_HARDWARE.CFG`. Your sensor may produce different—or inverted—readings compared to the example below. This is expected, and Happy Hare can accommodate it.
 
 ```yaml
-sync_feedback_analog_pin: mmu:<ADC GPIO>          # The ADC pin where the proportional filament pressure sensor is installed
-sync_feedback_analog_max_compression: 0.9964      # Raw sensor reading at max filament compression (buffer squeezed)
-sync_feedback_analog_max_tension: 0.0046          # Raw sensor reading at max filament tension (buffer expanded)
-sync_feedback_analog_neutral_point: 0.5005        # Neutral point
+sync_feedback_analog_pin: mmu:<Your analog-capable GPIO> # The ADC pin where the proportional filament pressure sensor is installed
+sync_feedback_analog_max_compression: 0.9964             # Raw sensor reading at max filament compression (buffer squeezed)
+sync_feedback_analog_max_tension: 0.0046                 # Raw sensor reading at max filament tension (buffer expanded)
+sync_feedback_analog_neutral_point: 0.5005               # Sensor neutral point (tunable to apply positive tension on the filament to unburden the Bowden and extruder)
 ```
 
 ## Installation Options
