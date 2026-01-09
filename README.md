@@ -20,7 +20,7 @@ The primary goals were to reduce the overall form factor, optimise sensor–magn
 ![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.png>)
 
 > [!NOTE] 
-> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or  [Single-colour](Single_Colour_Step) with recessed tick marks.
+> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](MK%20II%20(Full%20redesign)/Multi_Colour_Step) tick marks or  [Single-colour](MK%20II%20(Full%20redesign)/Single_Colour_Step) with recessed tick marks.
 > Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the bottom to streamline wiring for your particular mmu.
 
 
@@ -29,10 +29,10 @@ Assembly is reasonably straight forward.
 - Install ECAS fittings without optional, rubber boots
 - Install D4 x 15mm magnet in PSF shuttle until it's flush with the end of the shuttle opposite the ECAS fitting (magnetic orientation doesn't matter)
 - Straighten the PTFE tube you will be inserting into the "Stumpy" PSF body
-- Insert the PTFE tube from the left, threading it through the `20mm` spring and PSF shuttle until it bottoms out on the recess of the body. Adjust the position so it doesnt jam or pull out of the channel when held against the opposite stop, Install the ECAS clip to secure, inerted with the 90° top towards the shuttle so its retained in the nub's provided
-- Insert PSF module into slot provided
-- Genltly slide the lib / cover from the back and locate on the nubs before securing with a M2 x 6mm SHCS screw
-- Verify the shuttle moves freely across its full range of movement
+- Insert the PTFE bowden tube (2.0mm-2.5mm ID) from the left, threading it through the `20mm` spring and PSF shuttle until it bottoms out on the recess of the body. Adjust the position so it doesnt jam or pull out of the channel when held against the opposite stop. Install the ECAS clip to secure the PTFE, inserted with the 90° top towards the shuttle so it's retained, and prevented from rotating by the nub's on the shuttle
+- Insert PSF 1.0/v1.1 circuit board into slot provided
+- Gently slide the lid / cover from the back over the shuttle and onto the base, locating and press the parts until they snap together on the locating nubs. Be gentle, and dont force it. Secure the lid / cover with a single M2 x 6mm SHCS screw
+- Verify the shuttle moves freely across its full range of movement before installing
 
 ![Assembly showing magnet ECSA clip positions](<Assets/Assembly showing magnet, spring, and ECAS clip orientation.png>)
 
@@ -40,24 +40,26 @@ Assembly is reasonably straight forward.
 
 | Item                            | Specification                                                | Quantity |
 | ------------------------------- | ------------------------------------------------------------ | -------- |
-| **PSF v1.1+ Board**             | Kit from [Aliexpress](https://www.aliexpress.com/item/1005010470743517.html) includes all the required parts below    | 1        |
-| **Spring**                      | 0.4 mm × 6 mm × 20 mm, spring steel (cut down and shorten kit spring if too long                          | 1        |
+| **PSF v1.0/1.1+ Board**         | Inexpensive kit from [Aliexpress](https://www.aliexpress.com/item/1005010470743517.html) that includes all the required parts below    | 1        |
+| **Spring**                      | 0.4 mm × 6 mm × 20 mm, spring steel ( If longer, e,g 25mm, cut down and shorten it, tiding up the cut end with needle nose pliers   | 1        |
 | **Magnet**                      | D4 mm × 15 mm N35                                            | 1        |
 | **ECAS04 Bowden connector & clips**|                                                           | 2        |
 | **M2×6 mm SHCS screw**          |                                                              | 1        |
+| PTFE tube                       | Short PTFE tube between Stumpy Sensor and MMU (2 - 2.5mm ID). 3mm ID is too weak and will deform and jam. |          |
 
 ## Prerequsites
 
-This needs to be used with `Happy Hare` Flowguard and **integrated** support for Proportional Feedback Sensors.
+Stumpy PSF needs to be used with `Happy Hare` Flowguard and **integrated** support for Proportional Feedback Sensors.
 Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for detailed setup and configuration instructions.
 
 > [!NOTE] 
-> You will need to switch to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` is complete and merged with the main Happy Hare release.  
+> You will need to switch to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` concludes and is merged with the main Happy Hare release.  
 >
 > ```text
 > cd ~/Happy-Hare
-> ./install.sh -b FLOWGUARD
+> ./install.sh -b flowguard
 > ```
+> Switch back at any time by running `./install.sh -b main` but may need to manually undo some of the new Flowguard configuration & renamed parameters (Its not difficult).
 
 ## Happy Hare Configuration
 
