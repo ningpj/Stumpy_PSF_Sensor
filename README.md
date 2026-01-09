@@ -2,7 +2,7 @@
 
 During extended periods of synchronised printing without intervening tool changes, alignment between extruder and gear steppers can gradually drift. Even with precise calibration, factors such as under extrusion during purging, printing at high speed near upper flow limits, friction and drag and the inertia of heavy spools can conspire to cause slippage in either the extruder or more commonly—the downstream gear stepper. Over time, this mismatch accumulates and can lead to print artefacts caused by missed steps or suboptimal extrusion rates. Although not always apparent on well-tuned systems, it's a legitimate and demonstrable issue.
 
-Proportional sync-feedback sensors address this using linear Hall Effect sensors (or similar), providing analog positional telemetry to Happy Hare allowing it to continuously adjust and fine tune gear stepper Rotational Distance (RD).
+Proportional sync-feedback sensors address this using linear Hall Effect sensors (or similar), providing real-time analog positional telemetry to Happy-Hare allowing it to continuously adjust and fine tune the following gear stepper's Rotational Distance (RD).
 
 This redesign is based around the PSF v1.0/1.1 or later proportional sensor kit from **Kashine6** on ALiexpress and is intended to be used with the **Happy Hare** MMU ecosystem and new Flowguard / Sync-feedback controller.
 
@@ -12,75 +12,72 @@ This design is based on the original works of [Tshine's Dual Micro-switch based 
 
 ## Assembly
 
-![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.jpeg>)
+![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.png>)
 
 > [!NOTE] 
-> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](Multi_Colour_Step) tick marks or  [Single-colour](Single_Colour_Step) with recessed tick marks.
-> Depending on MMU / Printer orientation, you may elect to invert all the parts (mirror along x axis in your slicer) to move the connector to the top to streamline wiring. 
+> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](MK%20II%20(Full%20redesign)/Multi_Colour_Step) tick marks or [Single-colour](MK%20II%20(Full%20redesign)/Single_Colour_Step) with recessed tick marks. Also consider lowering your 1st layer speed as the coloured elements are reasonably narrow to ensure tick marks are crisp and clean. 
+> Depending on MMU / printer orientation, you may also consider inverting all parts (mirror along x axis in your slicer) to relocate the connector to the bottom of the unit to optimise wiring for your particular mmu setup.
 
 
-Assembly is reasonably straight forward.
+Assembly is reasonably straight forward:
 
-- Install ECAS fittings without rubber boots
-- Install D4 x 15mm magnet in PSF shuttle until it's flush with the end of the shuttle (magnetic orientation doesn't matter)
-- Straighten the PTFE tube you will be inserting into the "Stumpy" PSF body
-- Insert the PTFE tube from the right, threading through the spring and PSF shuttle until it bottoms out on the recess of the body. Install the ECAS clip to secure
-- Hold the shuttle up against the stop on the left hand side of the body. Using a small screw driver or hex key, push and adjust the magnet until it bottoms out in the recess for it on the body. Once in position, it should sit proud of the PSF shuttle by 4mm as per the image below
-- Use 2 M2 x 6mm SHCS screws to install the PSF module
-- Use a M2 x 6mm SHCS screw to secure the cover
-- Verify the shuttle moves freely across its full range of movement
+- Install the `ECAS04` fittings without the optional rubber boot. You still need the hard plastic clasp cover on the base though.
+- Press the `D4 × 15 mm` magnet into the PSF shuttle until it sits flush with the end opposite the `ECAS04` fitting. Magnet orientation doesn’t matter; Happy-Hare will calibrate it.
+- Straighten the PTFE tube you’ll use between the MMU and the “Stumpy” PSF sensor. Avoid PTFE with an `ID > 2.5 mm` when fitting close to the MMU if it has to bend to accomodate the full range of gates / lanes as kinks can jam the shuttle, which must move freely for any selected gate.
+- Insert the  `2.0 – 2.5 mm ID` PTFE feeder tube from the left, feeding it through the `20 mm` spring (or `25 mm` if this is all you have) and shuttle until it bottoms out in the body recess. Adjust so it neither binds nor pulls out when held against the opposite stop. Install the colour coordinated `ECAS04` clip with the 90° top facing the shuttle so it’s retained and prevented from rotating by the nubs provided.
+- Insert the `PSF 1.0 / v1.1` PCB module into the provided slot.
+- Slide the lid / cover on from the back over the shuttle and onto the base, aligning the parts and snapping them gently onto the locating nubs. Do not force it. Secure with a single `M2 × 6 mm SHCS`.
+- Confirm the shuttle moves freely across its full travel before installing.
 
-![alt text](<Assets/Assembly showing magnet recess.jpeg>)
+![Assembly showing magnet ECSA clip positions](<Assets/Assembly showing magnet, spring, and ECAS clip orientation.png>)
 
 ## Bill of Materials (BOM)
 
 | Item                            | Specification                                                | Quantity |
 | ------------------------------- | ------------------------------------------------------------ | -------- |
-| **PSF v1.1+ Board**             | Kit from [Aliexpress](https://www.aliexpress.com/item/1005010470743517.html) includes all the required parts below    | 1        |
-| **Spring**                      | 0.4 mm × 6 mm × 20 mm, spring steel (cut down and shorten kit spring if too long                          | 1        |
+| **PSF v1.0/1.1+ Board**         | Inexpensive kit from [Aliexpress](https://www.aliexpress.com/item/1005010470743517.html) that includes all the required parts below    | 1        |
+| **Spring**                      | 0.4 mm × 6 mm × 20 mm, spring steel ( If longer, e,g 25mm, cut down and shorten it, tiding up the cut end with needle nose pliers   | 1        |
 | **Magnet**                      | D4 mm × 15 mm N35                                            | 1        |
 | **ECAS04 Bowden connector & clips**|                                                           | 2        |
-| **M2×6 mm SHCS screw**          |                                                              | 3        |
+| **M2×6 mm SHCS screw**          |                                                              | 1        |
+| **PTFE feeder tube**                | Short PTFE feeder tube installed between the “Stumpy” PSF Sensor and the MMU (2.5 mm ID recommended) - 3 mm ID PTFE tube is too soft and will deform or jam if its bent too much. |          |
 
 ## Prerequsites
 
-This needs to be used with `Happy Hare` Flowguard and **integrated** support for Proportional Feedback Sensors.
-Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for detailed setup and configuration instructions.
+Stumpy PSF needs to be used with `Happy-Hare` Flowguard and **integrated** support for Proportional Feedback Sensors (Release `3.4.2` or later).
+Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for proportional sensor setup, configuration, and usage instructions.
 
 > [!NOTE] 
-> You will need to switch to the Happy Hare `FLOWGUARD` branch before configuring the sensor until the `beta` is complete and merged with the main Happy Hare release.  
+> You will need to manually switch across to the Happy-Hare `FLOWGUARD` branch before configuring the sensor until the `beta` concludes and is merged with the main Happy-Hare release.  
 >
 > ```text
 > cd ~/Happy-Hare
-> ./install.sh -b FLOWGUARD
+> ./install.sh -b flowguard
 > ```
+> You can switch back at any time by running `./install.sh -b main` but will need to manually undo some of the new Flowguard configuration optiosn & renamed Happy-Hare parameters (It's not difficult, just a reminder).
 
-## Happy Hare Configuration
+## Happy-Hare Configuration
 
 `MMU_PARAMETERS.CFG`
 
-The "Stumpy" PSF Sync-Feedback Sensor has 14mm of movement.
+The "Stumpy" PSF Sync-Feedback Sensor has 14.5mm of buffer / sensor range.
 
 ```yaml
-sync_feedback_buffer_range: 14 		# Travel in "buffer" between compression/tension or one sensor and end (see above)
-sync_feedback_buffer_maxrange: 14 	# Absolute maximum end-to-end travel (mm) provided by buffer (see above)
+sync_feedback_buffer_range: 14.5 		# Travel in "buffer" between compression/tension or one sensor and end (see above)
+sync_feedback_buffer_maxrange: 14.5 	# Absolute maximum end-to-end travel (mm) provided by buffer (see above)
 ```
 
-Use `MMU_CALIBRATE_PSENSOR` to determine the min and max ADC raw values returned by the sensor to set the following parameters in `MMU_HARDWARE.CFG`. Your sensor may return different values than the example below e.g.:
+In `MMU_HARDWARE.CFG` set `sync_feedback_analog_pin: mmu:<ADC GPIO>` to a valid analog-capable GPIO port on your MCU you have connected the "Stumpy" PSF sensor to. [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file) provides a breakdown on their GITHUB of valid ADC GPIO ports for many popular MMU MCU's.  Note that while many boards offer multiple ADC-capable GPIO's, only one port has been fully verified and documented for each board.
+
+Restart Klipper, load a gate with filament and run `MMU_CALIBRATE_PSENSOR` to determine the minimum and maximum ADC values returned by your PSF v1.0 / v1.1 Sensor module. Use these values to configure the corresponding parameters in `MMU_HARDWARE.CFG`. Your sensor may produce different—or inverted—readings compared to the example below. This is expected, and Happy-Hare can accommodate it.
 
 ```yaml
-sync_feedback_analog_pin: mmu:<ADC GPIO>          # The ADC pin where the proportional filament pressure sensor is installed
-sync_feedback_analog_max_compression: 0.0038      # Raw sensor reading at max filament compression (buffer squeezed)
-sync_feedback_analog_max_tension: 0.9919          # Raw sensor reading at max filament tension (buffer expanded)
-sync_feedback_analog_neutral_point: 0.4979        # Neutral point
+sync_feedback_analog_pin: mmu:<Your analog-capable GPIO> # The ADC pin where the proportional filament pressure sensor is installed
+sync_feedback_analog_max_compression: 0.9964             # Raw sensor reading at max filament compression (buffer squeezed)
+sync_feedback_analog_max_tension: 0.0046                 # Raw sensor reading at max filament tension (buffer expanded)
+sync_feedback_analog_neutral_point: 0.5005               # Sensor neutral point (tunable to apply positive tension on the filament to unburden the Bowden and extruder)
 ```
 
 ## Installation Options
 
-Normal orientation (as designed)
-
-![Normal Oriented (As designed)](<Assets/Normal orientation.jpeg>)
-
-**[Optional]** Inverted (Mirror all parts along x axis in your slicer)
-
-![Inverted Orientation](<Assets/Inverted along x axis in slicer.jpeg>)
+![Normal Orientation, wired from top](<Assets/Normal orientation.png>)
