@@ -56,7 +56,7 @@ Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Ex
 > cd ~/Happy-Hare
 > ./install.sh -b flowguard
 > ```
-> You can switch back at any time by running `./install.sh -b main` but will need to manually undo some of the new Flowguard configuration optiosn & renamed Happy-Hare parameters (It's not difficult, just a reminder).
+> You can switch back at any time by running `./install.sh -b main` but will need to manually undo some of the new Flowguard configuration options & renamed Happy-Hare parameters (It's not difficult, just a reminder).
 
 ## Happy-Hare Configuration
 
