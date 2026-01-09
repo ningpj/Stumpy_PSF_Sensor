@@ -17,26 +17,18 @@ The primary goals have been to further reduce the overall form factor, optimise 
 ![Stumpy PSF Sensor](<Assets/Stumpy PSF Sensor.png>)
 
 > [!NOTE] 
-> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](MK%20II%20(Full%20redesign)/Multi_Colour_Step) tick marks or [Single-colour](MK%20II%20(Full%20redesign)/Single_Colour_Step) with recessed tick marks.
-> Depending on MMU / printer orientation, you may elect to invert all parts (mirror along x axis in your slicer) to move the connector to the bottom to optimise wiring for your particular mmu setup.
+> Step files (rather than STLs) are included for printing the sensor with [Multi-colour](MK%20II%20(Full%20redesign)/Multi_Colour_Step) tick marks or [Single-colour](MK%20II%20(Full%20redesign)/Single_Colour_Step) with recessed tick marks. Also consider lowering your 1st layer speed as the coloured elements are reasonably narrow to ensure tick marks are crisp and clean. 
+> Depending on MMU / printer orientation, you may also consider inverting all parts (mirror along x axis in your slicer) to relocate the connector to the bottom of the unit to optimise wiring for your particular mmu setup.
 
 
 Assembly is reasonably straight forward:
 
-- Install ECAS04 fittings without the optional, rubber boot (You still need the hard plastic, clasp cover whatsit
-- Install D4 x 15mm magnet in PSF shuttle until it's flush with the end of the shuttle opposite the ECAS04 fitting (Magnet orientation doesn't matter as this will be calibrated using Happy Hare)
-- Straighten the PTFE tube you plan to use between your MMU and "Stumpy" PSF Sensor.  Do not use PTFE tube with an ID > 2.5mm for the feeder if its close to the MMU and is likely to bend when traversing gate / lane positons. This is to prevent it from kinking and potentially jamming the shuttle *the shuttle needs to move freely when any gate is selected and loaded
-- Insert the PTFE bowden tube (2.0mm-2.5mm ID) from the left, threading it through the `20mm` spring and PSF shuttle until it bottoms out on the recess of the body. Adjust the position so it doesnt jam or pull out of the channel when held against the opposite stop. Install the ECAS clip to secure the PTFE, inserted with the 90° top towards the shuttle so it's retained, and prevented from rotating by the nub's on the shuttle
-- Insert PSF 1.0/v1.1 circuit board into slot provided
-- Gently slide the lid / cover from the back over the shuttle and onto the base, locating and press the parts until they snap together on the locating nubs. Be gentle, and dont force it. Secure the lid / cover with a single M2 x 6mm SHCS screw
-- Verify the shuttle moves freely across its full range of movement before installing
-
-- Install the ECAS04 fittings without the optional rubber boot. You still need the hard plastic clasp cover on the base though.
-- Press the D4 × 15 mm magnet into the PSF shuttle until it sits flush with the end opposite the ECAS04 fitting. Magnet orientation doesn’t matter; Happy Hare will calibrate it.
-- Straighten the PTFE tube you’ll use between the MMU and the “Stumpy” PSF sensor. Avoid PTFE with an ID > 2.5 mm when fitted clsoe to the MMU if it has to bend to accomodate the full range of gates / lanes as kinks can jam the shuttle, which must move freely for any selected gate.
-- Insert the 2.0 – 2.5 mm ID PTFE feeder tube from the left, feeding it through the 20 mm spring (or 25 mm if this is all you have) and shuttle until it bottoms out in the body recess. Adjust so it neither binds nor pulls out when held against the opposite stop. Install the colour coordinated ECAS04 clip with the 90° top facing the shuttle so it’s retained and prevented from rotating by the nubs provided.
-- Insert the PSF 1.0 / v1.1 PCB into the provided slot.
-- Slide the lid / cover on from the back over the shuttle and onto the base, aligning the parts and snapping them gently onto the locating nubs. Do not force it. Secure with a single M2 × 6 mm SHCS.
+- Install the `ECAS04` fittings without the optional rubber boot. You still need the hard plastic clasp cover on the base though.
+- Press the `D4 × 15 mm` magnet into the PSF shuttle until it sits flush with the end opposite the `ECAS04` fitting. Magnet orientation doesn’t matter; Happy Hare will calibrate it.
+- Straighten the PTFE tube you’ll use between the MMU and the “Stumpy” PSF sensor. Avoid PTFE with an `ID > 2.5 mm` when fitting close to the MMU if it has to bend to accomodate the full range of gates / lanes as kinks can jam the shuttle, which must move freely for any selected gate.
+- Insert the  `2.0 – 2.5 mm ID` PTFE feeder tube from the left, feeding it through the `20 mm` spring (or `25 mm` if this is all you have) and shuttle until it bottoms out in the body recess. Adjust so it neither binds nor pulls out when held against the opposite stop. Install the colour coordinated `ECAS04` clip with the 90° top facing the shuttle so it’s retained and prevented from rotating by the nubs provided.
+- Insert the `PSF 1.0 / v1.1` PCB module into the provided slot.
+- Slide the lid / cover on from the back over the shuttle and onto the base, aligning the parts and snapping them gently onto the locating nubs. Do not force it. Secure with a single `M2 × 6 mm SHCS`.
 - Confirm the shuttle moves freely across its full travel before installing.
 
 ![Assembly showing magnet ECSA clip positions](<Assets/Assembly showing magnet, spring, and ECAS clip orientation.png>)
