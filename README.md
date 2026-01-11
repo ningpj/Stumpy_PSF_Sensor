@@ -23,7 +23,7 @@ The primary goals have been to further reduce the overall form factor, optimise 
 
 Assembly is reasonably straight forward:
 
-- Straighten the end of the PTFE tube you plan to use between the MMU and “Stumpy” PSF sensor. Avoid PTFE with an `ID > 2.5 mm` if you want to position it close to the MMU as it has to bend to accomodate the full range of gates / lanes. Kinks can jam the shuttle which must move freely for any selected gate.
+- Straighten the end of the PTFE tube you plan to use between the MMU and “Stumpy” PSF sensor. Avoid PTFE with an `ID > 2.5 mm` if you want to position it close to the MMU if it has to bend to accomodate the full range of gates / lanes. Kinks can jam the shuttle which must move freely for any selected gate.
 - Check the body `4 mm` PTFE path with the PTFE tube to make sure its smooth and doesn't bind. Use a 4mm drill to gently remove any residual print artefacts around the 4 mm - 2 mm step down chamfer - Be careful not to damage the chamfer though.
 - Install the `ECAS04` fittings without the optional rubber boot. You still need the hard plastic clasp cover on the base though.
 - Press the `D4 × 15 mm` magnet into the PSF shuttle until it sits flush with the end opposite the `ECAS04` fitting. Magnet orientation doesn’t matter; Happy-Hare will calibrate it.
