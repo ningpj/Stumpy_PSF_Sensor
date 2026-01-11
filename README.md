@@ -8,7 +8,7 @@ This case has been based around the excellent `PSF v1.0 / 1.1` Proportional Sync
 
 ## References & Acknowledgements
 
-This design has been completely reworked from the ground up, incorporating improvements informed by field testing of MK I and the earlier adaptations of [Tshine's original dual micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file) to support Proportional Sync-Feedback sensors.
+This design has been completely reworked from the ground up, incorporating improvements informed by field testing of MK I and the earlier adaptation of [Tshine's original dual micro-switch based Sync-feedback Sensor](https://makerworld.com/en/models/507573) by [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file) to support Proportional Sync-Feedback sensors.
 
 The primary goals have been to further reduce the overall form factor, optimise sensor–magnet alignment and constrain shuttle lateral movement to maximise Hall Affect ADC signal fidelity, particularly for top‑mounted MMUs and central Bowden entry ports. The assembly now measures just `63 mm` in length — `9.2 mm` shorter than Kashine6’s version and `3 mm` shorter than MK I revision. The `ECAS04` captive retention design has also been refined to make it easier to install them, hopefully without splitting the base. Printable `ECAS04` clips have also been included to colour coordinate ;-)  
 
