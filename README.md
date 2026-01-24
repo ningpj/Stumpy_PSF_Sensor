@@ -97,7 +97,7 @@ Magnetic field strength varies and may need to reduce the number of magnets and 
 ![Optional 3x2mm Magnet Stack](<Assets/Assembly with 3mm magnet stack.png>)
 <br>
 <br>
-With the slightly offset 3x2mm magnet stack (8), excellent `MMU_CALIBRATE_PSENSOR` results were achieved byrepeatly running `MMU_CALIBRATE_PSENSOR` after adjusting the position and number of magnets.  
+With the slightly offset 3x2mm magnet stack (8), excellent `MMU_CALIBRATE_PSENSOR` results were achieved by repeatly running `MMU_CALIBRATE_PSENSOR` after adjusting the position and number of magnets.  
 
 ![Optimal 3x2mm Magnet offset](<Assets/Shuttle with 3mm magnet stack.png>)
 
