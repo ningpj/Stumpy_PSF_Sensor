@@ -83,4 +83,26 @@ sync_feedback_analog_neutral_point: 0.5005               # Sensor neutral point 
 
 ## Installation Options
 
-![Normal Orientation, wired from top](<Assets/Normal orientation.png>)
+Normal orientation with connector on top for right hand installation. Optionally mirror parts along x axis in your slicer to relocate the connector to the bottom of the unit to optimise wiring for your particular mmu setup. 
+
+For setups with a central PTFE entry port like mine, consider installing a PTFE guide as shown below to straighten the PTFE path to ensure the sensor shuttle can move freely no matter the gate [Makerworld: HamAndChris 90°, 180°, or 60° PTFE Bowden tube bend guide](https://makerworld.com/en/models/1033408-90deg-180deg-or-60deg-ptfe-bowden-tube-bend-guide#profileId-1016713).
+
+ ![Normal Orientation, wired from top with PTFE guide](<Assets/Normal orientation PTFE guide.png>)
+
+## Optional Shuttle with 3x2mm Magnet Stack
+This option is for people who can't easily source the PSF sensor kit and D4 15mm magnet. This shuttle allows the use of a 3x2mm N35 magnet stack instead of the preferred 15mm D4 magnet. Depending on the thickness of your magnets, it will accomodate 7-9 magnets. Take care when inseting the shuttle ECAS that you dont break the magnet carrier. 
+
+Magnetic field strength varies and may need to reduce the number of magnets and reposition them slightly to achive optimal fidelity and saturate the Hall Effect sensor at each extreme. Tuning isn't manditory and will function perfectly fine without this. For example, in testing, only 8 magnets were required with the stack slightly offset by approximately 1.5mm from the right side of the shuttle to saturate the sensor.
+
+![Optional 3x2mm Magnet Stack](<Assets/Assembly with 3mm magnet stack.png>)
+<br>
+<br>
+With the slightly offset 3x2mm magnet stack (8), excellent `MMU_CALIBRATE_PSENSOR` results were achieved byrepeatly running `MMU_CALIBRATE_PSENSOR` after adjusting the position and number of magnets.  
+
+![Optimal 3x2mm Magnet offset](<Assets/Shuttle with 3mm magnet stack.png>)
+
+```yaml
+// sync_feedback_analog_max_compression: 0.9809
+// sync_feedback_analog_max_tension:     0.0043
+// sync_feedback_analog_neutral_point:   0.4926
+```
