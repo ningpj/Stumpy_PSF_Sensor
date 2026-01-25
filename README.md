@@ -90,9 +90,10 @@ For setups with a central PTFE entry port like mine, consider installing a PTFE 
  ![Normal Orientation, wired from top with PTFE guide](<Assets/Normal orientation PTFE guide.png>)
 
 ## Optional Shuttle with 3x2mm Magnet Stack
-This option is for people who can't easily source the PSF sensor kit and D4 15mm magnet. This shuttle allows the use of a 3x2mm N35 magnet stack instead of the preferred 15mm D4 magnet. Depending on the thickness of your magnets, it will accomodate 7-9 magnets. Take care when inserting the shuttle ECAS that you dont break the magnet carrier.
 
-Magnetic field strength varies and may need to reduce the number of magnets and reposition them slightly to achive optimal fidelity and saturate the Hall Effect sensor at each extreme. Tuning isn't manditory and will function perfectly fine without this. For example, in testing, only 8 magnets were required with the stack slightly offset by approximately 1.5mm from the right side of the shuttle to saturate the sensor.
+This variant is intended for people who want to self‑source / build the PSF sensor and have difficulty obtaining the preferred D4×15 mm magnet. Instead, it uses a stack of commonly available 3×2 mm N35 magnets. Depending on their thickness, the carrier will accept a stack of 7–9 magnets. When installing the shuttle ECAS, take care not to crack or deform the carrier.
+
+Because magnetic flux varies, you may need to adjust the stack height or shift its position slightly to achieve saturation of the Hall‑effect sensor at both travel extremes. This tuning step is optional—the sensor will still function reliably without it. In testing, for example, saturation was achieved with eight magnets and the stack offset approximately 1.5 mm from the right side of the shuttle.
 
 ![Optional 3x2mm Magnet Stack](<Assets/Assembly with 3mm magnet stack.png>)
 <br>
