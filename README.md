@@ -83,7 +83,7 @@ sync_feedback_analog_neutral_point: 0.5005               # Sensor neutral point 
 
 ## Installation Options
 
-Normal orientation with connector on top for right hand installation. Optionally mirror parts along x axis in your slicer to relocate the connector to the bottom of the unit to optimise wiring for your particular mmu setup.
+Normal orientation with connector on top for right hand installation. Optionally mirror parts along x axis in your slicer to relocate the connector to the bottom of the unit to optimise wiring / visibility for your particular mmu setup.
 
 For setups with a central PTFE entry port like mine, consider installing a PTFE guide as shown below to help straighten the PTFE path and ensure the sensor shuttle moves freely no matter the gate selected [Makerworld: HamAndChris 90°, 180°, or 60° PTFE Bowden tube bend guide](https://makerworld.com/en/models/1033408-90deg-180deg-or-60deg-ptfe-bowden-tube-bend-guide#profileId-1016713).
 
@@ -91,7 +91,7 @@ For setups with a central PTFE entry port like mine, consider installing a PTFE 
 
 ## Optional Shuttle with 3x2mm Magnet Stack
 
-This variant is intended for people who want to self‑source / build the PSF sensor and have difficulty obtaining the preferred D4×15 mm magnet. Instead, it uses a stack of commonly available 3×2 mm N35 magnets. Depending on their thickness, the carrier will accept a stack of 7–9 magnets. When installing the shuttle ECAS, take care not to crack or deform the carrier.
+This variant is intended for people who want to self‑source / build the PSF sensor and have difficulty obtaining the preferred D4×15 mm magnet. Instead, it uses a stack of commonly available 3×2-ish mm N35 magnets. Depending on their thickness, the carrier will accept a stack of 7–9 magnets. When installing the shuttle ECAS, take care not to crack or deform the carrier.
 
 Because magnetic flux varies, you may need to adjust the stack height or shift its position slightly to achieve saturation of the Hall‑effect sensor at both travel extremes. This tuning step is optional—the sensor will still function reliably without it. In testing, for example, saturation was achieved with eight magnets and the stack offset approximately 1.5 mm from the right side of the shuttle.
 
