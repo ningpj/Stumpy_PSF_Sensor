@@ -98,7 +98,7 @@ Because magnetic flux varies, you may need to adjust the stack height or shift i
 ![Optional 3x2mm Magnet Stack](<Assets/Assembly with 3mm magnet stack.png>)
 <br>
 <br>
-With the slightly offset 3x2mm magnet stack (8), excellent `MMU_CALIBRATE_PSENSOR` results were achieved by repeatly adjusting the position / number of magnets and rerunning `MMU_CALIBRATE_PSENSOR` fo confirm results.  
+With the slightly offset 3x2mm magnet stack (8), excellent `MMU_CALIBRATE_PSENSOR` results were achieved by repeatly adjusting the position / number of magnets and rerunning `MMU_CALIBRATE_PSENSOR` to confirm results.  
 
 ![Optimal 3x2mm Magnet offset](<Assets/Shuttle with 3mm magnet stack.png>)
 
