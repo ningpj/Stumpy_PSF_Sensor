@@ -43,7 +43,7 @@ Assembly is reasonably straight forward:
 | **Magnet**                      | D4 mm × 15 mm N35                                            | 1        |
 | **ECAS04 Bowden connector & clips**|                                                           | 2        |
 | **M2×6 mm SHCS screw**          |                                                              | 1        |
-| **PTFE feeder tube**                | Short PTFE feeder tube installed between the “Stumpy” PSF Sensor and the MMU (2.5 mm ID recommended) - 3 mm ID PTFE tube is too soft and will deform or jam if its bent too much. |          |
+| **PTFE feeder tube**                | Short PTFE feeder tube installed between the “Stumpy” PSF Sensor and the MMU (2.5 mm ID recommended) - 3 mm ID PTFE tube is too flexible and will deform or jam if its bent too much. |          |
 
 ## Prerequsites
 
