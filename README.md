@@ -60,7 +60,7 @@ sync_feedback_buffer_range: 14.5 		# Travel in "buffer" between compression/tens
 sync_feedback_buffer_maxrange: 14.5 	# Absolute maximum end-to-end travel (mm) provided by buffer (see above)
 ```
 
-In `MMU_HARDWARE.CFG` set `sync_feedback_analog_pin: mmu:<ADC GPIO>` to a valid analog-capable GPIO port on the MCU you connected the "Stumpy" PSF sensor to. If `sync_feedback_*` parameters aren't defined under your `[mmu_sensor]` section, insert the following block manually, setting `compression`, `tension`, and `neutral_point` to 1, 0, 0.5 respectively. 
+In `MMU_HARDWARE.CFG` set `sync_feedback_analog_pin: mmu:<ADC GPIO>` to a valid analog-capable GPIO port on the MCU you connected the "Stumpy" PSF sensor to. If `sync_feedback_*` parameters aren't defined under your `[mmu_sensor]` section, insert the following block manually, setting `compression`, `tension`, and `neutral_point` to 1, 0, & 0.5 respectively. 
 
 [Kashine6](https://github.com/kashine6/Proportional-Sync-Feedback-Sensor?tab=readme-ov-file) provides a breakdown on their GITHUB of valid ADC GPIO ports for many popular MMU MCU's.  Note that while many boards offer multiple ADC-capable GPIO's, only one port has been fully verified and documented for each board.
 
