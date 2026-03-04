@@ -47,17 +47,7 @@ Assembly is reasonably straight forward:
 
 ## Prerequsites
 
-"Stumpy" PSF needs to be used inconjunction with `Happy-Hare` Flowguard **integrated** support for Proportional Feedback Sensors (Release `3.4.2` or later).
-Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for proportional sensor setup, configuration, and usage instructions.
-
-> [!NOTE] 
-> You will need to manually switch across to the Happy-Hare `FLOWGUARD` branch before configuring the sensor until the `beta` concludes and is merged with the main Happy-Hare release.  
->
-> ```text
-> cd ~/Happy-Hare
-> ./install.sh -b flowguard
-> ```
-> You can switch back at any time by running `./install.sh -b main` but will need to manually undo some of the new Flowguard configuration options & renamed Happy-Hare parameters (It's not difficult, just a reminder).
+"Stumpy" PSF needs to be used inconjunction with `Happy-Hare` Flowguard **integrated** support for Proportional Feedback Sensors (Release `3.4.2` or later). Please refer to https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder2 for proportional sensor setup, configuration, and usage instructions.
 
 ## Happy-Hare Configuration
 
